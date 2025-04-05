@@ -54,7 +54,7 @@ def dmc_obs2gym_obs(obs):
 
 class DMCGYM(gym.core.Env):
 
-    metadata = {"render_modes": ["rgb_array"]}
+    metadata = {"render_modes": ["human"]}
 
     def __init__(self, env: dm_env.Environment):
         self._env = env
