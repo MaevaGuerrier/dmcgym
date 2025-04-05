@@ -102,7 +102,7 @@ class DMCGYM(gym.core.Env):
         return dmc_obs2gym_obs(obs)
 
     def render(self,
-               mode='rgb_array',
+               mode='human',
                height: int = 84,
                width: int = 84,
                camera_id: int = 0):
