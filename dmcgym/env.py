@@ -109,6 +109,9 @@ class DMCGYM(gym.core.Env):
         assert mode in [
             'human', 'rgb_array'
         ], 'only support rgb_array and human mode, given %s' % mode
+        print("----------------------------")
+        print("RENDER MODE", mode)
+        print("----------------------------")
         if mode == 'rgb_array':
             return self._env.physics.render(height=height,
                                             width=width,
